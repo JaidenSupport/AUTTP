@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AUTTP Operation: Amalgamation</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttp.png">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .glossy-container {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 500);
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+      background: linear-gradient(135deg, #4285f4, #0d47a1, #000000);
+      background-size: 300% 300%;
+      animation: gradientAnimation 10s ease-in-out infinite;
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      text-align: center; 
+      transition: transform 0.3s ease;
+
+      animation: combinedAnimation 0.8s ease-in-out forwards, 
+                 gradientAnimation 10s ease-in-out infinite;
+
+      position: relative; 
+      top: -100px; 
+      opacity: 0;
+    }
+
+    .glossy-container h1 { 
+      color: white;       
+      font-size: 3em;     
+      margin-bottom: 20px; 
+    } 
+    .glossy-container:hover { 
+      transform: scale(1.05);
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+      background-image: linear-gradient(to right, blue, rgb(0, 0, 0));
+      background-size: 0% 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s ease;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    a:hover {
+      background-size: 100% 100%;
+    }
+
+    @keyframes combinedAnimation {
+      
+      0% {
+        transform: translateY(-100%); 
+        opacity: 0;                     
+      }
+      
+      100% {
+        transform: translateY(0);    
+        opacity: 1;                     
+      }
+    }
+    @keyframes combinedAnimation {
+      100% {
+        top: 0;
+        opacity: 1;       
+      }
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glossy-container">
+    <h1>AUTTP Operation: Amalgamation</h1> 
+    <h2> Links </h2>
+    <a href="/chatlogs">Chatlogs</a>
+    <a href="https://github.com/JaidenSupport/YouTubeReplyBot">UTTP Reply Bot</a>
+    <a href="https://github.com/JaidenSupport/Spambot/blob/main/template.txt">Email Template</a>
+    <a href="https://discord.gg/keBHhfpCaA">AUTTP Reply Bot</a>
+  </div>
+
+</body>
+</html>

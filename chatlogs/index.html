@@ -1,1 +1,286 @@
-<h1>UTTP chatlogs (under construction)</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UTTP Chatlogs</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttp.png">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-image: url('https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      height: auto; 
+    }
+
+    .glossy-container {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); 
+      text-shadow: 0 1px 2px rgba(51, 0, 255, 0.7);
+      background: linear-gradient(135deg, #ffffff, #0026ff, #000000);
+      background-size: 300% 300%;
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: transform 0.3s ease;
+      animation: combinedAnimation 0.8s ease-in-out forwards,
+                 gradientAnimation 10s ease-in-out infinite;
+      position: relative;
+      top: -100px; 
+      opacity: 0; 
+    }
+
+    .glossy-container:hover {
+      transform: scale(1.05);
+    }
+
+    .glossy-container h1 {
+      color: white;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .file-list, .folder-content { 
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: auto;
+    }
+
+    .file-list li, .folder-content li {
+      margin-bottom: 8px;
+      max-height: auto;
+    }
+
+    .folder-link {
+      display: flex;             
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1); 
+      transition: background-color 0.3s ease;
+      cursor: pointer; 
+    }
+
+    .folder-link:hover {
+      background-color: rgba(255, 255, 255, 0.2); 
+    }
+    .folder.open > .folder-content {
+      max-height: 1000px;
+    }
+
+    .folder-icon {
+      width: 20px;             
+      height: 20px;           
+      margin-right: 8px;        
+    }
+
+    .folder-content {
+      overflow: hidden;
+      height: 0;
+      max-height: 0;
+      transition: max-height 0.3s ease-in-out;
+      margin-left: 20px; 
+    }
+
+    .folder-link.active + .folder-content {
+      max-height: 100vh;
+    }
+    .file-link {
+      display: block;
+      color: #fff;
+      text-decoration: underline;
+      background-image: linear-gradient(to right, blue, rgb(0, 0, 0));
+      background-size: 0% 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s ease;
+      font-weight: bold;
+      margin-bottom: 8px; 
+    }
+
+    .file-link:hover {
+      background-size: 100% 100%;
+    }
+
+    @keyframes combinedAnimation {
+      100% {
+        top: 0;          
+        opacity: 1;
+      }
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glossy-container">
+    <h1>UTTP Chatlogs</h1>
+
+    <ul class="file-list">
+        <li>
+            <a href="#" class="folder-link">
+              <img src="antifnaf.gif" alt="Folder" class="folder-icon"> 
+              EMPIRE OF ANTI FNAF
+            </a>
+            <ul class="folder-content">
+              <li><a href="antifnaf/march/announcements.html" class="file-link">OLD #📢-announcements</a></li>
+              <li><a href="antifnaf/march/bots.html" class="file-link">OLD #🤖-bots</a></li>
+              <li><a href="antifnaf/march/chat.html" class="file-link">OLD #💬-chat</a></li>
+              <li><a href="antifnaf/march/memes.html" class="file-link">OLD #😂-memes-from-ohio</a></li>
+              <li><a href="antifnaf/june/announcements.html" class="file-link">#📢-announcements</a></li>
+              <li><a href="antifnaf/june/art.html" class="file-link">#🎨-art</a></li>
+              <li><a href="antifnaf/june/bots.html" class="file-link">#🤖-bots</a></li>
+              <li><a href="antifnaf/june/chat.html" class="file-link">#💬-chat</a></li>
+              <li><a href="antifnaf/june/memes.html" class="file-link">#😂-memes-from-ohio</a></li>
+            </ul>
+            <li>
+
+      <li>
+        <a href="#" class="folder-link">
+          <img src="defenderdomain.png" alt="Folder" class="folder-icon"> 
+          defender's domain
+        </a>
+        <ul class="folder-content">
+          <li><a href="defendersdomain/private-general.html" class="file-link">#private-general</a></li>
+        </ul>
+        <li>
+            <a href="#" class="folder-link">
+              <img src="dm.png" alt="Folder" class="folder-icon"> 
+              Anime Sucks
+            </a>
+            <ul class="folder-content">
+              <li><a href="dm/dm.html" class="file-link">Direct Messages</a></li>
+            </ul>
+            <li>
+                <a href="#" class="folder-link">
+                  <img src="uttpchinkfall.png" alt="Folder" class="folder-icon"> 
+                  UTTP: CHINKFALL
+                </a>
+                <ul class="folder-content">
+                  <li><a href="uttpchinkfall/announcements.html" class="file-link">#announcements</a></li>
+                  <li><a href="uttpchinkfall/disscussions.html" class="file-link">#chinkfall-discussion</a></li>
+                  <li><a href="uttpchinkfall/howtospamtiktok.html" class="file-link">#how-to-spam-tiktok</a></li>
+                </ul>
+                <li>
+                    <a href="#" class="folder-link">
+                      <img src="uttpnetv3.png" alt="Folder" class="folder-icon"> 
+                      UTTP-NET v3
+                    </a>
+                    <ul class="folder-content">
+                      <li><a href="uttpnetv3/disscussions.html" class="file-link">#discussions</a></li>
+                      <li><a href="uttpnetv3/knowledge-base.html" class="file-link">#knowledge-base</a></li>
+                    </ul>
+                    <li>
+                        <a href="#" class="folder-link">
+                          <img src="uttpoffical.gif" alt="Folder" class="folder-icon"> 
+                          UTTP Official
+                        </a>
+                        <ul class="folder-content">
+                          <li><a href="uttpoffical/autoping.html" class="file-link">#autoping</a></li>
+                          <li><a href="uttpoffical/host-twitter-raids.html" class="file-link">#host-twitter-raids</a></li>
+                          <li><a href="uttpoffical/howtogetpromoted.html" class="file-link">#how-to-get-promoted</a></li>
+                          <li><a href="uttpoffical/labs.html" class="file-link">#labs</a></li>
+                          <li><a href="uttpoffical/read-before-raiding.html" class="file-link">#read-before-raiding</a></li>
+                          <li><a href="uttpoffical/recruit-artwork.html" class="file-link">#artwork</a></li>
+                          <li><a href="uttpoffical/recruit-chat1.html" class="file-link">1 #recruit-chat</a></li>
+                          <li><a href="uttpoffical/recruit-chat2.html" class="file-link">2 #recruit-chat</a></li>
+                          <li><a href="uttpoffical/recruit-chat3.html" class="file-link">3 #recruit-chat</a></li>
+                          <li><a href="uttpoffical/recruit-officers.html" class="file-link">#officers</a></li>
+                          <li><a href="uttpoffical/recruit-propoganda.html" class="file-link">#propaganda</a></li>
+                          <li><a href="uttpoffical/recruit-vc.html" class="file-link">#recruit-vc</a></li>
+                          <li><a href="uttpoffical/vc.html" class="file-link">#vc</a></li>
+                          <li><a href="uttpoffical/vc2.html" class="file-link">#VC</a></li>
+                          <li><a href="uttpoffical/verified-announcements1.html" class="file-link">1 #verified-announcements</a></li>
+                          <li><a href="uttpoffical/verified-announcements2.html" class="file-link">2 #verified-announcements</a></li>
+                        </ul>
+                        <li>
+                            <a href="#" class="folder-link">
+                              <img src="uttpTM.png" alt="Folder" class="folder-icon"> 
+                              UTTP™ OFFICIAL
+                            </a>
+                            <ul class="folder-content">
+                              <li><a href="uttpTM/operations.html" class="file-link">#operations</a></li>
+                              <li><a href="uttpTM/recruits.html" class="file-link">#recruits</a></li>
+                              <li><a href="uttpTM/thy-law.html" class="file-link">#thy-law</a></li>
+                              <li><a href="uttpTM/trolls-r-scared.html" class="file-link">#trolls-r-scared</a></li>
+                            </ul>
+                            <li>
+                                <a href="#" class="folder-link">
+                                  <img src="utubetrollpolicebase.png" alt="Folder" class="folder-icon"> 
+                                  UTUBETROLLPOLICE BASE
+                                </a>
+                                <ul class="folder-content">
+                                  <li><a href="utubetrollpolicebase/daily-reminder.html" class="file-link">#daily-reminder</a></li>
+                                  <li><a href="utubetrollpolicebase/disscussions.html" class="file-link">#discussions</a></li>
+                                </ul>
+                                <li>
+                                    <a href="#" class="folder-link">
+                                      <img src="zntpoffical.png" alt="Folder" class="folder-icon"> 
+                                      ZNTP Official
+                                    </a>
+                                    <ul class="folder-content">
+                                      <li><a href="zntp/march/announcements.html" class="file-link">OLD #announcements</a></li>
+                                      <li><a href="zntp/march/chat.html" class="file-link">OLD #zntp-chat</a></li>
+                                      <li><a href="zntp/march/media.html" class="file-link">OLD #media</a></li>
+                                      <li><a href="zntp/march/memes.html" class="file-link">OLD #memes</a></li>
+                                      <li><a href="zntp/march/officer-chat.html" class="file-link">OLD #officer-chat</a></li>
+                                      <li><a href="zntp/march/poll.html" class="file-link">OLD #poll</a></li>
+                                      <li><a href="zntp/march/propaganda.html" class="file-link">OLD #zntp-propaganda</a></li>
+                                      <li><a href="zntp/march/send-links.html" class="file-link">OLD #send-links</a></li>
+                                      <li><a href="zntp/june/announcements.html" class="file-link">#announcements</a></li>
+                                      <li><a href="zntp/june/autoping.html" class="file-link">#autoping</a></li>
+                                      <li><a href="zntp/june/autoping-suggestions.html" class="file-link">#autoping-suggestions</a></li>
+                                      <li><a href="zntp/june/copypaste-templates.html" class="file-link">#copypastes-template</a></li>
+                                      <li><a href="zntp/june/disscussion.html" class="file-link">#main-discussion</a></li>
+                                      <li><a href="zntp/june/orders.html" class="file-link">#orders</a></li>
+                                      <li><a href="zntp/june/propoganda.html" class="file-link">#zntp-propaganda</a></li>
+                                      <li><a href="zntp/june/raid-suggestions.html" class="file-link">#raid-suggestions</a></li>
+                                      <li><a href="zntp/june/rules.html" class="file-link">#rules</a></li>
+                                      <li><a href="zntp/june/send-links.html" class="file-link">#send-links</a></li>
+                                      <li><a href="zntp/june/trainee-chat.html" class="file-link">#trainee-chat</a></li>
+                                      <li><a href="zntp/june/trainee-info.html" class="file-link">#trainee-info</a></li>
+
+                                    </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const folderLinks = document.querySelectorAll('.folder-link');
+
+folderLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    if (link.nextElementSibling && link.nextElementSibling.classList.contains('folder-content')) {
+      event.preventDefault();
+    }
+
+    const folderContent = link.nextElementSibling;
+    if (link.classList.contains('active')) {
+      folderContent.style.height = `${folderContent.scrollHeight}px`;
+      setTimeout(() => { 
+        folderContent.style.height = '0';
+      }, 10);
+    } else {
+      folderContent.style.height = `${folderContent.scrollHeight}px`;
+    }
+
+    link.classList.toggle('active');
+  });
+});
+  </script>
+
+</body>
+</html>
