@@ -1,8 +1,8 @@
 body {
-      background-image: url('https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin: 0px;
+  background-color: rgb(53, 32, 170);
+  background-image: url(https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo {
