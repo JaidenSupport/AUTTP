@@ -1,7 +1,15 @@
 body {
-  background-color: rgb(53, 32, 170);
-  background-image: url(https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png);
-  margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-image: url('https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      height: auto; 
 }
 
 .logo {
