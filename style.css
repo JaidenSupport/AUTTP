@@ -2,9 +2,6 @@ body {
       background-image: url('https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/auttpbackground.png');
       background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      min-height: 100vh;
-      height: auto; 
 }
 
 .logo {
