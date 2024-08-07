@@ -21,12 +21,26 @@
             <a href="/amalgamation" style="position:relative; bottom:-130px; right:210px" class="button">Amalgamation</a>
         </div>
         <div class="box2">
-            <img src="https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/antitroll.jpg" alt="" width="300" height="300" class="image" style="border: 5px solid #7c7c7c; border-radius: 5px; background-color: #7c7c7c; margin: 5px; position:relative; right:-10px;"">
-            <h2 style="text-align: center; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto;">This is AntiTroll, they put in a lot of hard work to fight the UTTP everyday. Be like AntiTroll</h2>
+            <img src="https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/antitroll.jpg" alt="" width="300" height="300" class="image" style="border: 5px solid #7c7c7c; border-radius: 5px; background-color: #7c7c7c; margin: 5px; position:relative; right:-10px;" id="image">
+            <h2 style="text-align: center; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto;" id="text">This is AntiTroll, they put in a lot of hard work to fight the UTTP everyday. Be like AntiTroll</h2>
         </div>
     </div>
-    <video width="480" height="360" controls>
-        <source src="/intro.mp4" type="video/mp4">
-      </video>
+
+<script>
+    let click = false;
+    const image = document.getElementById("image");
+    const text = document.getElementById("text");
+
+    image.addEventListener('click', function() {
+        if (!click) {
+            image.src = "https://files.catbox.moe/nqlxtu.webp";
+            text.textContent = "This is UTTP Emperor Anime Sucks, he's the former leader of the UTTP. He's a pedophile who shares CP across the clearnet. Don't be like Anime Sucks.";
+        } else {
+            image.src = "https://raw.githubusercontent.com/JaidenSupport/AUTTP/main/antitroll.jpg";
+            text.textContent = "This is AntiTroll, they put in a lot of hard work to fight the UTTP everyday. Be like AntiTroll";
+        }
+        click = !click;
+    });
+</script>
 </body>
 </html>
