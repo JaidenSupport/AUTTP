@@ -5,6 +5,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.banner {
+  background-color: #ffffff;  
+  color: black;             
+  text-align: center;    
+  padding: 10px 0;             
+  font-size: 18px;         
+  font-weight: bold;        
+  position: relative;
+  top: 0;
+  width: 100%;
+        }
+
 .logo {
   display: block;
   margin-left: auto;
